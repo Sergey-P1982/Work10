@@ -1,10 +1,9 @@
 package com.epam.task61.service;
 
 import com.epam.task61.model.Books;
-import com.epam.task61.model.data.DataSource;
 import com.epam.task61.model.entity.Book;
 import com.epam.task61.util.InputOutputFile;
-import com.epam.task61.util.Languare;
+import com.epam.task61.util.Language;
 import com.epam.task61.util.ResourceManager;
 
 import java.util.Arrays;
@@ -79,9 +78,9 @@ public class ServiceBooks {
     }
 
     public void changeLanguage(int choice) {
-        Languare[] languares = Languare.values();
+        Language[] languages = Language.values();
         Locale locale =
-                languares[choice - 1].getLocale();
+                languages[choice - 1].getLocale();
         manager.changeLocale(locale);
     }
     public void saveBooks() {

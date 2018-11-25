@@ -2,13 +2,13 @@ package com.epam.task61.util;
 
 import java.util.Locale;
 
-public enum Languare {
+public enum Language {
     ENG(new Locale("en", "UK")),
     RUS(new Locale("ru", "RU")),
     UA(new Locale("uk", "UA"));
 
     private Locale locale;
-    private Languare(Locale locale) {
+    private Language(Locale locale) {
         this.locale = locale;
     }
 
